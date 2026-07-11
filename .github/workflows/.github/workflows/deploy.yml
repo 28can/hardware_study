@@ -1,0 +1,24 @@
+name: Build & Deploy Hugo Blog
+on:
+  push:
+    branches: [ main ] # 你的源码主分支，若为master则替换为master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取源码
+        uses: actions/checkout@v4
+        with:
+          submodules: true # 拉取主题子模块
+      - name: 安装Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true # 启用扩展版Hugo，支持SCSS
+      - name: 构建静态文件
+        run: hugo --gc --minify
+      - name: 部署到gh-pages分支
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
