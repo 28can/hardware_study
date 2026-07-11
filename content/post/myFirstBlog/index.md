@@ -5,3 +5,17 @@ title = '本地上传github操作'
 +++
 
 ## Hello World
+
+
+
+## 日常上传GitHub指令
+
+
+git add .
+git commit -m "blog"
+git push
+
+
+
+
+
