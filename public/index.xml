@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Hugo 主题 Stack</title>
+        <title>硬件学习ing</title>
         <link>http://localhost:1313/</link>
-        <description>Recent content on Hugo 主题 Stack</description>
+        <description>Recent content on 硬件学习ing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh</language>
         <lastBuildDate>Sat, 11 Jul 2026 14:37:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -10,6 +10,6 @@
             <link>http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/</link>
             <pubDate>Sat, 11 Jul 2026 14:37:37 +0800</pubDate>
             <guid>http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/</guid>
-            <description>&lt;p&gt;###Hello World&lt;/p&gt;&#xA;</description>
+            <description>&lt;img src=&#34;http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/cover.png&#34; alt=&#34;Featured image of post 本地上传github操作&#34; /&gt;&lt;h2 id=&#34;hello-world&#34;&gt;Hello World&#xA;&lt;/h2&gt;&lt;h2 id=&#34;日常上传github指令&#34;&gt;日常上传GitHub指令&#xA;&lt;/h2&gt;&lt;p&gt;git add .&#xA;git commit -m &amp;ldquo;blog&amp;rdquo;&#xA;git push&lt;/p&gt;&#xA;&lt;p&gt;&lt;img alt=&#34;图片描述&#34; loading=&#34;lazy&#34; sizes=&#34;(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px&#34; src=&#34;test-pic.webp&#34;&gt;&lt;/p&gt;&#xA;</description>
         </item></channel>
 </rss>
