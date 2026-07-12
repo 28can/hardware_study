@@ -16,16 +16,16 @@
 
 [zh-hant-tw]
     label  = "正體中文"
-    title  = "硬件学习ing"
+    title  = "硬體學習ing"
     weight = 3
 
     [zh-hant-tw.params.sidebar]
-        subtitle = "为国为民为天下"
+        subtitle = "為國為民為天下"
 
 [ja]
     label  = "日本語"
-    title  = "硬件学习ing"
+    title  = "はーどうぇあ べんきょうちゅう"
     weight = 4
 
     [ja.params.sidebar]
-        subtitle = "为国为民为天下"
+        subtitle = "くにのため、たみのため、てんかのため"
