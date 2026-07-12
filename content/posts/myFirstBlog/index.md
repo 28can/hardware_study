@@ -5,18 +5,12 @@ title = '本地上传github操作'
 image = 'cover.png'
 +++
 
-## Hello World
-
-
-
 ## 日常上传GitHub指令
-
-
-git add .
-git commit -m "blog"
+git add .  
+git commit -m "blog"  
 git push
 
-
+![alt text](920155234b5de694e7fbe17816275af-1.jpg)
 
 ![图片描述](test-pic.webp)
 
