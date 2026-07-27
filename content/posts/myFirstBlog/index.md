@@ -4,17 +4,26 @@ draft = false
 title = '本地上传github操作'
 +++
 
-## 日常上传GitHub指令
+## 上传GitHub指令
+```
 git add .  
 git commit -m "blog"  
 git push
+```
+
+## 本地查看blog
+```
+hugo server -D
+```
 
 
-
-
+## blog封面照片
+```
+image = 'cover.png'
+```
+如果需要给blog加上封面，请在+++ +++之中加入image
 <!--
 ![alt text](920155234b5de694e7fbe17816275af-1.jpg)  
 ![一人之下头像](test-pic.webp)
 -->
 
-<!--image = 'cover.png'-->
