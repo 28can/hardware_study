@@ -2,6 +2,7 @@
 date = '2026-07-11T14:37:37+08:00'
 draft = false
 title = '开关电源设计p1-p3'
+math = true
 +++
 
 ## 电源与负载  
