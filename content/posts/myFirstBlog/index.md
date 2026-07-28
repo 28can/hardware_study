@@ -27,3 +27,25 @@ image = 'cover.png'
 ![一人之下头像](test-pic.webp)
 -->
 
+## blog加上iamge
+先在index.md文件下建立文件夹images，将照片放在images里
+比如照片power-supply.png
+### HTML格式
+```
+<figure style="text-align: center;">
+  <img src="images/power-supply.png"
+       alt="开关电源设计结构图"
+       width="700">
+  <figcaption>图1 开关电源设计结构图</figcaption>
+</figure>
+```
+### markdown格式
+```
+![开关电源设计结构图](images/power-supply.png)  
+![图片说明](图片路径)
+```
+
+
+
+
+

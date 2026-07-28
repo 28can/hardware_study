@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="上传GitHub指令 1 2 3 git add . git commit -m &#34;blog&#34; git push 本地查看blog 1 hugo server -D blog封面照片 1 image = &#39;cover.png&#39; 如果需要给blog加上封面，请在+++ +++之中加入image\nblog加上iamge 先在index.md文件下建立文件夹images，将照片放在images里 比如照片power-supply.png\n">
-<title>本地上传github操作</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="电源与负载 转换形式 转换方向 常见设备 主要作用 AC/DC 交流转直流 电源适配器、开关电源 将市电转换为直流电 DC/DC 直流转直流 Buck、Boost 电源模块 升压、降压或稳压 DC/AC 直流转交流 逆变器 输出交流电 AC/AC 交流转交流 变频器 调节交流电压和频率 如表所示，该图展示了电力电子系统中常见的四种电能转换形式，主要包括\nAC/DC、DC/DC、DC/AC 和 AC/AC 四种。\n">
+<title>开关电源设计p1-p3</title>
 
 
-<link rel="canonical" href="http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/">
+<link rel="canonical" href="http://localhost:1313/p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
 
-<link rel="stylesheet" href="/scss/style.min.e62e09c60ba428a627e03568fa3df938f6a8224f815b5846f00816c17d4a0be4.css"><meta property='og:title' content="本地上传github操作">
-<meta property='og:description' content="上传GitHub指令 1 2 3 git add . git commit -m &#34;blog&#34; git push 本地查看blog 1 hugo server -D blog封面照片 1 image = &#39;cover.png&#39; 如果需要给blog加上封面，请在+++ +++之中加入image\nblog加上iamge 先在index.md文件下建立文件夹images，将照片放在images里 比如照片power-supply.png\n">
-<meta property='og:url' content='http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/'>
+<link rel="stylesheet" href="/scss/style.min.e62e09c60ba428a627e03568fa3df938f6a8224f815b5846f00816c17d4a0be4.css"><meta property='og:title' content="开关电源设计p1-p3">
+<meta property='og:description' content="电源与负载 转换形式 转换方向 常见设备 主要作用 AC/DC 交流转直流 电源适配器、开关电源 将市电转换为直流电 DC/DC 直流转直流 Buck、Boost 电源模块 升压、降压或稳压 DC/AC 直流转交流 逆变器 输出交流电 AC/AC 交流转交流 变频器 调节交流电压和频率 如表所示，该图展示了电力电子系统中常见的四种电能转换形式，主要包括\nAC/DC、DC/DC、DC/AC 和 AC/AC 四种。\n">
+<meta property='og:url' content='http://localhost:1313/p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/'>
 <meta property='og:site_name' content='硬件学习ing'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2026-07-11T14:37:37&#43;08:00'/><meta property='article:modified_time' content='2026-07-11T14:37:37&#43;08:00'/>
-<meta name="twitter:title" content="本地上传github操作">
-<meta name="twitter:description" content="上传GitHub指令 1 2 3 git add . git commit -m &#34;blog&#34; git push 本地查看blog 1 hugo server -D blog封面照片 1 image = &#39;cover.png&#39; 如果需要给blog加上封面，请在+++ +++之中加入image\nblog加上iamge 先在index.md文件下建立文件夹images，将照片放在images里 比如照片power-supply.png\n">
+<meta name="twitter:title" content="开关电源设计p1-p3">
+<meta name="twitter:description" content="电源与负载 转换形式 转换方向 常见设备 主要作用 AC/DC 交流转直流 电源适配器、开关电源 将市电转换为直流电 DC/DC 直流转直流 Buck、Boost 电源模块 升压、降压或稳压 DC/AC 直流转交流 逆变器 输出交流电 AC/AC 交流转交流 变频器 调节交流电压和频率 如表所示，该图展示了电力电子系统中常见的四种电能转换形式，主要包括\nAC/DC、DC/DC、DC/AC 和 AC/AC 四种。\n">
     <link rel="shortcut icon" href="/img/xingxing.png" />
 
     </head>
@@ -227,7 +227,7 @@
                                         
                                     
                                 
-                                <option value="/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/" selected>简体中文</option>
+                                <option value="/p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/" selected>简体中文</option>
                             
                                 
                                 
@@ -294,13 +294,11 @@
             <nav class="toc-nav" id="TableOfContents">
                 
   <ol>
-    <li><a href="#上传github指令">上传GitHub指令</a></li>
-    <li><a href="#本地查看blog">本地查看blog</a></li>
-    <li><a href="#blog封面照片">blog封面照片</a></li>
-    <li><a href="#blog加上iamge">blog加上iamge</a>
+    <li><a href="#电源与负载">电源与负载</a></li>
+    <li><a href="#对电源的要求">对电源的要求</a>
       <ol>
-        <li><a href="#html格式">HTML格式</a></li>
-        <li><a href="#markdown格式">markdown格式</a></li>
+        <li><a href="#一电源为什么重要">一、电源为什么重要</a></li>
+        <li><a href="#二电源模块的发展趋势">二、电源模块的发展趋势</a></li>
       </ol>
     </li>
   </ol>
@@ -323,7 +321,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/">本地上传github操作</a>
+            <a href="/p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/">开关电源设计p1-p3</a>
         </h2>
     
         
@@ -362,7 +360,7 @@
 
 
                     <time class="article-time--reading">
-                        阅读时长: 1 分钟
+                        阅读时长: 3 分钟
                     </time>
                 
             </div>
@@ -389,13 +387,11 @@
             <nav class="toc-nav">
                 
   <ol>
-    <li><a href="#上传github指令">上传GitHub指令</a></li>
-    <li><a href="#本地查看blog">本地查看blog</a></li>
-    <li><a href="#blog封面照片">blog封面照片</a></li>
-    <li><a href="#blog加上iamge">blog加上iamge</a>
+    <li><a href="#电源与负载">电源与负载</a></li>
+    <li><a href="#对电源的要求">对电源的要求</a>
       <ol>
-        <li><a href="#html格式">HTML格式</a></li>
-        <li><a href="#markdown格式">markdown格式</a></li>
+        <li><a href="#一电源为什么重要">一、电源为什么重要</a></li>
+        <li><a href="#二电源模块的发展趋势">二、电源模块的发展趋势</a></li>
       </ol>
     </li>
   </ol>
@@ -408,76 +404,95 @@
     <section class="article-content">
     
     
-    <h2 id="上传github指令">上传GitHub指令
-</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .  
-</span></span><span class="line"><span class="cl">git commit -m &#34;blog&#34;  
-</span></span><span class="line"><span class="cl">git push
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="本地查看blog">本地查看blog
-</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server -D
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="blog封面照片">blog封面照片
-</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">image = &#39;cover.png&#39;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>如果需要给blog加上封面，请在+++ +++之中加入image</p>
-<!--
-![alt text](920155234b5de694e7fbe17816275af-1.jpg)  
-![一人之下头像](test-pic.webp)
--->
-<h2 id="blog加上iamge">blog加上iamge
-</h2><p>先在index.md文件下建立文件夹images，将照片放在images里
-比如照片power-supply.png</p>
-<h3 id="html格式">HTML格式
-</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;figure style=&#34;text-align: center;&#34;&gt;
-</span></span><span class="line"><span class="cl">  &lt;img src=&#34;images/power-supply.png&#34;
-</span></span><span class="line"><span class="cl">       alt=&#34;开关电源设计结构图&#34;
-</span></span><span class="line"><span class="cl">       width=&#34;700&#34;&gt;
-</span></span><span class="line"><span class="cl">  &lt;figcaption&gt;图1 开关电源设计结构图&lt;/figcaption&gt;
-</span></span><span class="line"><span class="cl">&lt;/figure&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="markdown格式">markdown格式
-</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">![开关电源设计结构图](images/power-supply.png)  
-</span></span><span class="line"><span class="cl">![图片说明](图片路径)
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+    <h2 id="电源与负载">电源与负载
+</h2><div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th style="text-align: center">转换形式</th>
+					<th style="text-align: center">转换方向</th>
+					<th style="text-align: left">常见设备</th>
+					<th style="text-align: left">主要作用</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: center">AC/DC</td>
+					<td style="text-align: center">交流转直流</td>
+					<td style="text-align: left">电源适配器、开关电源</td>
+					<td style="text-align: left">将市电转换为直流电</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">DC/DC</td>
+					<td style="text-align: center">直流转直流</td>
+					<td style="text-align: left">Buck、Boost 电源模块</td>
+					<td style="text-align: left">升压、降压或稳压</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">DC/AC</td>
+					<td style="text-align: center">直流转交流</td>
+					<td style="text-align: left">逆变器</td>
+					<td style="text-align: left">输出交流电</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">AC/AC</td>
+					<td style="text-align: center">交流转交流</td>
+					<td style="text-align: left">变频器</td>
+					<td style="text-align: left">调节交流电压和频率</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>如表所示，该图展示了电力电子系统中常见的四种电能转换形式，主要包括<br>
+<strong>AC/DC、DC/DC、DC/AC 和 AC/AC</strong> 四种。</p>
+<p><strong>AC/DC 转换</strong>
+交流电经过适配器或开关电源转换后，可以得到稳定的直流电。</p>
+<p><strong>DC/DC 转换</strong>
+直流电还可以通过 DC/DC 变换器调整电压等级，以满足不同电子设备的供电需求。</p>
+<p><strong>DC/AC 转换</strong><br>
+逆变器则能够把直流电转换为交流电，实现 DC/AC 转换。</p>
+<p><strong>AC/AC 转换</strong>
+变频器可以对交流电的电压和频率进行调节。</p>
+
+    <blockquote>
+        <p><strong>说明：</strong> 图中的电源适配器、DC/DC 电源模块、逆变器和变频器，分别对应上述四种典型的电能转换设备。</p>
+
+    </blockquote>
+<hr>
+<p><img alt="电能形式的转换" class="gallery-image" data-flex-basis="360px" data-flex-grow="150" height="1024" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/images/power-supply.png" srcset="/p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/images/power-supply_hu_9cf0b149ff2a91f.png 800w, /p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/images/power-supply.png 1536w" width="1536"></p>
+<p>如表所示，这张图与“开关电源设计”关系最密切的部分主要是 AC/DC 变换和 DC/DC 变换。AC/DC 开关电源负责将市电转换为直流电，而 DC/DC 开关电源则负责对直流电压进行升压、降压或稳压处理。</p>
+<h2 id="对电源的要求">对电源的要求
+</h2><h3 id="一电源为什么重要">一、电源为什么重要
+</h3><p>在电子系统中，电源负责把输入电能转换为负载所需要的电压和电流。虽然电源通常不直接参与数据处理或控制运算，但它会影响整个系统能否稳定工作。</p>
+<p>对于处理器、通信设备、工业控制系统和服务器等设备来说，负载电流可能在很短时间内发生较大变化。如果电源的输出能力不足，可能会出现输出电压下降、系统复位、芯片工作异常，甚至器件损坏等问题。</p>
+<p>因此，电源设计不能只关注“能否输出所需电压”，还需要综合考虑效率、功率密度、可靠性、成本、体积以及动态响应等指标。</p>
+<h3 id="二电源模块的发展趋势">二、电源模块的发展趋势
+</h3><p><img alt="不同尺寸电源模块的功率发展趋势" class="gallery-image" data-flex-basis="560px" data-flex-grow="233" height="821" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/images/power-module-evolution.png" srcset="/p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/images/power-module-evolution_hu_2c8da45433ab187a.png 800w, /p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/images/power-module-evolution_hu_2c70bfecdce65579.png 1600w, /p/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E8%AE%BE%E8%AE%A1p1-p3/images/power-module-evolution.png 1916w" width="1916"></p>
+<p>如图展示了不同封装尺寸 DC/DC 电源模块输出功率的发展变化，其中：</p>
+<ul>
+<li>FB 表示 Full Brick，即全砖模块；</li>
+<li>HB 表示 Half Brick，即半砖模块；</li>
+<li>QB 表示 Quarter Brick，即四分之一砖模块；</li>
+<li>EB 表示 Eighth Brick，即八分之一砖模块；</li>
+<li>SB 表示 Sixteenth Brick，即十六分之一砖模块。</li>
+</ul>
+<p>从图中的数据可以看出，随着电源技术的发展，相同尺寸电源模块能够提供的输出功率不断提高。</p>
+<p>例如，半砖模块的输出功率由早期的约 100 W，逐渐提高到 700 W；四分之一砖模块也从约 100 W 提升到 500 W。八分之一砖和十六分之一砖模块虽然体积更小，但输出功率也在持续增加。</p>
+<p>这说明电源模块正在向以下方向发展：</p>
+
+    <blockquote>
+        <p>更小的体积、更高的输出功率和更高的功率密度。</p>
+
+    </blockquote>
+<p>功率密度通常可以表示为：</p>
+$$
+\rho_P = \frac{P_{\mathrm{out}}}{V}
+$$<p>式中：</p>
+<ul>
+<li>$\rho_P$ 为功率密度；</li>
+<li>$P_{\mathrm{out}}$ 为电源输出功率；</li>
+<li>$V$ 为电源模块所占体积。</li>
+</ul>
+<p>在输出功率相同的情况下，电源体积越小，功率密度越高。但体积减小后，散热、电磁干扰和器件布局等问题也会更加明显。</p>
+
 </section>
 
 
