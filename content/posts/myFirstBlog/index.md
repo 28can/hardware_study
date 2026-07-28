@@ -5,22 +5,25 @@ title = '本地上传github操作'
 +++
 
 ## 上传GitHub指令
-```
+
+```powershell
 git add .  
 git commit -m "blog"  
 git push
 ```
 
 ## 本地查看blog
-```
+
+```powershell
 hugo server -D
 ```
 
-
 ## blog封面照片
-```
+
+```bash
 image = 'cover.png'
 ```
+
 如果需要给blog加上封面，请在+++ +++之中加入image
 <!--
 ![alt text](920155234b5de694e7fbe17816275af-1.jpg)  
@@ -28,10 +31,13 @@ image = 'cover.png'
 -->
 
 ## blog加上iamge
+
 先在index.md文件下建立文件夹images，将照片放在images里
 比如照片power-supply.png
+
 ### HTML格式
-```
+
+```bash
 <figure style="text-align: center;">
   <img src="images/power-supply.png"
        alt="开关电源设计结构图"
@@ -39,13 +45,26 @@ image = 'cover.png'
   <figcaption>图1 开关电源设计结构图</figcaption>
 </figure>
 ```
-### markdown格式
-```
+
+### markdown格式  
+
+```bash
 ![开关电源设计结构图](images/power-supply.png)  
 ![图片说明](图片路径)
 ```
 
+## 添加公式，识别latex
 
+在+++ +++之间加入
 
+```bash
+math = true
+```
 
+## 围栏代码块
 
+在三个反引号```之后添加 `powershell`、`bash` 或 `text`，可以指定代码块的语言。
+
+- Windows PowerShell 命令：推荐使用 `powershell`
+- Git Bash、Linux、macOS 终端：推荐使用 `bash`
+- 不需要语法高亮的普通内容：使用 `text`
