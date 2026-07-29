@@ -12,6 +12,30 @@ git commit -m "blog"
 git push
 ```
 
+### 推送失败  
+
+`git push`之后出现以下问题：  
+
+```bash
+client_loop: send disconnect: Connection reset by peer  
+-客户端在发送断开连接信息时，连接被对方重置。
+send-pack: unexpected disconnect while reading sideband packet  
+-Git 在读取远程返回的数据包时，连接意外中断。
+fatal: the remote end hung up unexpectedly  
+-致命错误：远程服务器意外断开了连接。
+```
+
+处理办法：  
+
+```bash
+git rev-parse HEAD
+git ls-remote origin refs/heads/main
+-如果两条命令显示的哈希相同，并且开头都是：
+-f72cb78
+-说明实际上已经推送成功，不需要再操作。
+git push origin main
+```
+
 ## 本地查看blog
 
 ```powershell
