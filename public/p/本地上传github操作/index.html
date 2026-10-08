@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="上传GitHub指令 1 2 3 git add . git commit -m &#34;blog&#34; git push 本地查看blog 1 hugo server -D blog封面照片 1 image = &#39;cover.png&#39; 如果需要给blog加上封面，请在+++ +++之中加入image\nblog加上iamge 先在index.md文件下建立文件夹images，将照片放在images里 比如照片power-supply.png\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="上传GitHub指令\r1 2 3 git add . git commit -m &#34;blog&#34; git push 推送失败\rgit push之后出现以下问题：\n1 2 3 4 5 6 client_loop: send disconnect: Connection reset by peer -客户端在发送断开连接信息时，连接被对方重置。 send-pack: unexpected disconnect while reading sideband packet -Git 在读取远程返回的数据包时，连接意外中断。 fatal: the remote end hung up unexpectedly -致命错误：远程服务器意外断开了连接。 处理办法：\n">
 <title>本地上传github操作</title>
 
 
@@ -12,13 +12,13 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
 
-<link rel="stylesheet" href="/scss/style.min.e62e09c60ba428a627e03568fa3df938f6a8224f815b5846f00816c17d4a0be4.css"><meta property='og:title' content="本地上传github操作">
-<meta property='og:description' content="上传GitHub指令 1 2 3 git add . git commit -m &#34;blog&#34; git push 本地查看blog 1 hugo server -D blog封面照片 1 image = &#39;cover.png&#39; 如果需要给blog加上封面，请在+++ +++之中加入image\nblog加上iamge 先在index.md文件下建立文件夹images，将照片放在images里 比如照片power-supply.png\n">
+<link rel="stylesheet" href="/scss/style.min.254d7e016571351f8c8cba50023af616229569c622878587022f845829276d2e.css"><meta property='og:title' content="本地上传github操作">
+<meta property='og:description' content="上传GitHub指令\r1 2 3 git add . git commit -m &#34;blog&#34; git push 推送失败\rgit push之后出现以下问题：\n1 2 3 4 5 6 client_loop: send disconnect: Connection reset by peer -客户端在发送断开连接信息时，连接被对方重置。 send-pack: unexpected disconnect while reading sideband packet -Git 在读取远程返回的数据包时，连接意外中断。 fatal: the remote end hung up unexpectedly -致命错误：远程服务器意外断开了连接。 处理办法：\n">
 <meta property='og:url' content='http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/'>
 <meta property='og:site_name' content='硬件学习ing'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2026-07-11T14:37:37&#43;08:00'/><meta property='article:modified_time' content='2026-07-11T14:37:37&#43;08:00'/>
 <meta name="twitter:title" content="本地上传github操作">
-<meta name="twitter:description" content="上传GitHub指令 1 2 3 git add . git commit -m &#34;blog&#34; git push 本地查看blog 1 hugo server -D blog封面照片 1 image = &#39;cover.png&#39; 如果需要给blog加上封面，请在+++ +++之中加入image\nblog加上iamge 先在index.md文件下建立文件夹images，将照片放在images里 比如照片power-supply.png\n">
+<meta name="twitter:description" content="上传GitHub指令\r1 2 3 git add . git commit -m &#34;blog&#34; git push 推送失败\rgit push之后出现以下问题：\n1 2 3 4 5 6 client_loop: send disconnect: Connection reset by peer -客户端在发送断开连接信息时，连接被对方重置。 send-pack: unexpected disconnect while reading sideband packet -Git 在读取远程返回的数据包时，连接意外中断。 fatal: the remote end hung up unexpectedly -致命错误：远程服务器意外断开了连接。 处理办法：\n">
     <link rel="shortcut icon" href="/img/xingxing.png" />
 
     </head>
@@ -294,7 +294,11 @@
             <nav class="toc-nav" id="TableOfContents">
                 
   <ol>
-    <li><a href="#上传github指令">上传GitHub指令</a></li>
+    <li><a href="#上传github指令">上传GitHub指令</a>
+      <ol>
+        <li><a href="#推送失败">推送失败</a></li>
+      </ol>
+    </li>
     <li><a href="#本地查看blog">本地查看blog</a></li>
     <li><a href="#blog封面照片">blog封面照片</a></li>
     <li><a href="#blog加上iamge">blog加上iamge</a>
@@ -303,6 +307,8 @@
         <li><a href="#markdown格式">markdown格式</a></li>
       </ol>
     </li>
+    <li><a href="#添加公式识别latex">添加公式，识别latex</a></li>
+    <li><a href="#围栏代码块">围栏代码块</a></li>
   </ol>
 
             </nav>
@@ -362,7 +368,7 @@
 
 
                     <time class="article-time--reading">
-                        阅读时长: 1 分钟
+                        阅读时长: 2 分钟
                     </time>
                 
             </div>
@@ -389,7 +395,11 @@
             <nav class="toc-nav">
                 
   <ol>
-    <li><a href="#上传github指令">上传GitHub指令</a></li>
+    <li><a href="#上传github指令">上传GitHub指令</a>
+      <ol>
+        <li><a href="#推送失败">推送失败</a></li>
+      </ol>
+    </li>
     <li><a href="#本地查看blog">本地查看blog</a></li>
     <li><a href="#blog封面照片">blog封面照片</a></li>
     <li><a href="#blog加上iamge">blog加上iamge</a>
@@ -398,6 +408,8 @@
         <li><a href="#markdown格式">markdown格式</a></li>
       </ol>
     </li>
+    <li><a href="#添加公式识别latex">添加公式，识别latex</a></li>
+    <li><a href="#围栏代码块">围栏代码块</a></li>
   </ol>
 
             </nav>
@@ -416,9 +428,48 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .  
-</span></span><span class="line"><span class="cl">git commit -m &#34;blog&#34;  
-</span></span><span class="line"><span class="cl">git push
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">add</span> <span class="p">.</span>  
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">&#34;blog&#34;</span>  
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">push</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="推送失败">推送失败
+</h3><p><code>git push</code>之后出现以下问题：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">client_loop: send disconnect: Connection reset by peer  
+</span></span><span class="line"><span class="cl">-客户端在发送断开连接信息时，连接被对方重置。
+</span></span><span class="line"><span class="cl">send-pack: unexpected disconnect <span class="k">while</span> reading sideband packet  
+</span></span><span class="line"><span class="cl">-Git 在读取远程返回的数据包时，连接意外中断。
+</span></span><span class="line"><span class="cl">fatal: the remote end hung up unexpectedly  
+</span></span><span class="line"><span class="cl">-致命错误：远程服务器意外断开了连接。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>处理办法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rev-parse HEAD
+</span></span><span class="line"><span class="cl">git ls-remote origin refs/heads/main
+</span></span><span class="line"><span class="cl">-如果两条命令显示的哈希相同，并且开头都是：
+</span></span><span class="line"><span class="cl">-f72cb78
+</span></span><span class="line"><span class="cl">-说明实际上已经推送成功，不需要再操作。
+</span></span><span class="line"><span class="cl">git push origin main
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="本地查看blog">本地查看blog
@@ -427,7 +478,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server -D
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">server</span> <span class="n">-D</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="blog封面照片">blog封面照片
@@ -436,7 +487,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">image = &#39;cover.png&#39;
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">image</span> <span class="o">=</span> <span class="s1">&#39;cover.png&#39;</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果需要给blog加上封面，请在+++ +++之中加入image</p>
@@ -458,10 +509,10 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;figure style=&#34;text-align: center;&#34;&gt;
-</span></span><span class="line"><span class="cl">  &lt;img src=&#34;images/power-supply.png&#34;
-</span></span><span class="line"><span class="cl">       alt=&#34;开关电源设计结构图&#34;
-</span></span><span class="line"><span class="cl">       width=&#34;700&#34;&gt;
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;figure <span class="nv">style</span><span class="o">=</span><span class="s2">&#34;text-align: center;&#34;</span>&gt;
+</span></span><span class="line"><span class="cl">  &lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">&#34;images/power-supply.png&#34;</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">alt</span><span class="o">=</span><span class="s2">&#34;开关电源设计结构图&#34;</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">width</span><span class="o">=</span><span class="s2">&#34;700&#34;</span>&gt;
 </span></span><span class="line"><span class="cl">  &lt;figcaption&gt;图1 开关电源设计结构图&lt;/figcaption&gt;
 </span></span><span class="line"><span class="cl">&lt;/figure&gt;
 </span></span></code></pre></td></tr></table>
@@ -473,11 +524,28 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">![开关电源设计结构图](images/power-supply.png)  
-</span></span><span class="line"><span class="cl">![图片说明](图片路径)
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">!<span class="o">[</span>开关电源设计结构图<span class="o">](</span>images/power-supply.png<span class="o">)</span>  
+</span></span><span class="line"><span class="cl">!<span class="o">[</span>图片说明<span class="o">](</span>图片路径<span class="o">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h2 id="添加公式识别latex">添加公式，识别latex
+</h2><p>在+++ +++之间加入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">math</span> <span class="o">=</span> <span class="nb">true</span>
+</span></span></code></pre></td></tr></table>
 </div>
+</div><h2 id="围栏代码块">围栏代码块
+</h2><p>在三个反引号```之后添加 <code>powershell</code>、<code>bash</code> 或 <code>text</code>，可以指定代码块的语言。</p>
+<ul>
+<li>Windows PowerShell 命令：推荐使用 <code>powershell</code></li>
+<li>Git Bash、Linux、macOS 终端：推荐使用 <code>bash</code></li>
+<li>不需要语法高亮的普通内容：使用 <code>text</code></li>
+</ul>
+
 </section>
 
 
@@ -607,7 +675,7 @@
             </main>
         </div>
         
-<script type="text/javascript" src="/ts/main.55c5be22be2f00ed04af744ef07764fb7dc6f216bfa7988d80c0a458824654a3.js" defer></script>
+<script type="text/javascript" src="/ts/main.52cc14b84090e88a1da50e1d73ab4188aac30ef06cdb40b63f3235c53af8a019.js" defer></script>
 
 
     </body>
