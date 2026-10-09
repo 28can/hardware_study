@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="电源防反接电路分析\r二极管（D1、D2） 防反接电路分析\r正接：D1有压差，承担整个电路的电流 反接：D1会承受一个“反向电压”，相当于电阻无限大，承担电源电压 适用于：小电流、允许压降的防反接 不适用于：大电流、低电压、高效率、低功耗系统 整流桥 防反接电路分析\r">
+<title>电源防反接电路分析</title>
+
+
+<link rel="canonical" href="http://localhost:1313/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/scss/style.min.59c5eb617b2b83358d0baf163162325d5249a2be44239b430beb29a87c1ddbe4.css"><meta property='og:title' content="电源防反接电路分析">
+<meta property='og:description' content="电源防反接电路分析\r二极管（D1、D2） 防反接电路分析\r正接：D1有压差，承担整个电路的电流 反接：D1会承受一个“反向电压”，相当于电阻无限大，承担电源电压 适用于：小电流、允许压降的防反接 不适用于：大电流、低电压、高效率、低功耗系统 整流桥 防反接电路分析\r">
+<meta property='og:url' content='http://localhost:1313/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/'>
+<meta property='og:site_name' content='硬件学习ing'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2026-10-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-10-09T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="电源防反接电路分析">
+<meta name="twitter:description" content="电源防反接电路分析\r二极管（D1、D2） 防反接电路分析\r正接：D1有压差，承担整个电路的电流 反接：D1会承受一个“反向电压”，相当于电阻无限大，承担电源电压 适用于：小电流、允许压降的防反接 不适用于：大电流、低电压、高效率、低功耗系统 整流桥 防反接电路分析\r">
+    <link rel="shortcut icon" href="/img/xingxing.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        <figure class="site-avatar">
+                <a href="/">
+                    <img src="/img/YiRenZhiXia.png" 
+                        width="1254"
+                        height="1254"
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
+                </a>
+                
+            </figure>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">硬件学习ing</a></h1>
+            <h2 class="site-description">为国为民为天下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Red background -->
+  <rect width="512" height="512" fill="#DE2910"/>
+
+  <!-- Large star -->
+  <polygon fill="#FFDE00"
+    points="90,80 105,125 150,125 114,152 128,198 90,170 52,198 66,152 30,125 75,125"/>
+
+  <!-- Small stars -->
+  <polygon fill="#FFDE00"
+    points="180,55 187,75 208,75 191,88 197,109 180,96 163,109 169,88 152,75 173,75"/>
+
+  <polygon fill="#FFDE00"
+    points="220,110 227,130 248,130 231,143 237,164 220,151 203,164 209,143 192,130 213,130"/>
+
+  <polygon fill="#FFDE00"
+    points="220,170 227,190 248,190 231,203 237,224 220,211 203,224 209,203 192,190 213,190"/>
+
+  <polygon fill="#FFDE00"
+    points="180,225 187,245 208,245 191,258 197,279 180,266 163,279 169,258 152,245 173,245"/>
+</svg>
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    <li id="i18n-switch">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                        <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                            
+                                
+                                
+                                    
+                                
+                                <option value="/en/" >English</option>
+                            
+                                
+                                
+                                    
+                                        
+                                    
+                                
+                                <option value="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/" selected>简体中文</option>
+                            
+                                
+                                
+                                    
+                                
+                                <option value="/zh-hant-tw/" >正體中文</option>
+                            
+                                
+                                
+                                    
+                                
+                                <option value="/ja/" >日本語</option>
+                            
+                        </select>
+                    </li>
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav class="toc-nav" id="TableOfContents">
+                
+  <ol>
+    <li><a href="#二极管d1d2-防反接电路分析">二极管（D1、D2） 防反接电路分析</a></li>
+    <li><a href="#整流桥-防反接电路分析">整流桥 防反接电路分析</a></li>
+    <li><a href="#保险丝二极管-防反接">保险丝+二极管 防反接</a></li>
+    <li><a href="#pmos-防反接电路分析这里关乎mos管选型">Pmos 防反接电路分析（这里关乎mos管选型）</a></li>
+    <li><a href="#nmos-防反接电路分析">Nmos 防反接电路分析</a></li>
+  </ol>
+
+            </nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/">电源防反接电路分析</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-10-09T00:00:00Z'>2026年10月9日星期五</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        阅读时长: 4 分钟
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+    <aside class="article-toc">
+        <details>
+            <summary>
+                <div class="article-toc-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                    <span>目录</span>
+                </div>
+            </summary>
+            <nav class="toc-nav">
+                
+  <ol>
+    <li><a href="#二极管d1d2-防反接电路分析">二极管（D1、D2） 防反接电路分析</a></li>
+    <li><a href="#整流桥-防反接电路分析">整流桥 防反接电路分析</a></li>
+    <li><a href="#保险丝二极管-防反接">保险丝+二极管 防反接</a></li>
+    <li><a href="#pmos-防反接电路分析这里关乎mos管选型">Pmos 防反接电路分析（这里关乎mos管选型）</a></li>
+    <li><a href="#nmos-防反接电路分析">Nmos 防反接电路分析</a></li>
+  </ol>
+
+            </nav>
+        </details>
+    </aside>
+    
+
+    <section class="article-content">
+    
+    
+    <h1 id="电源防反接电路分析">电源防反接电路分析
+</h1><h2 id="二极管d1d2-防反接电路分析">二极管（D1、D2） 防反接电路分析
+</h2><p><img alt="二极管防反接正向导通与反向截止电路对比示意图" class="gallery-image" data-flex-basis="426px" data-flex-grow="177" height="941" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/%E6%AD%A3%E5%90%91%E5%AF%BC%E9%80%9A%E4%B8%8E%E5%8F%8D%E5%90%91%E6%88%AA%E6%AD%A2%E7%94%B5%E8%B7%AF%E5%AF%B9%E6%AF%94%E7%A4%BA%E6%84%8F%E5%9B%BE-1.png" srcset="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/%E6%AD%A3%E5%90%91%E5%AF%BC%E9%80%9A%E4%B8%8E%E5%8F%8D%E5%90%91%E6%88%AA%E6%AD%A2%E7%94%B5%E8%B7%AF%E5%AF%B9%E6%AF%94%E7%A4%BA%E6%84%8F%E5%9B%BE-1_hu_ea3ee5f3ac978e62.png 800w, /p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/%E6%AD%A3%E5%90%91%E5%AF%BC%E9%80%9A%E4%B8%8E%E5%8F%8D%E5%90%91%E6%88%AA%E6%AD%A2%E7%94%B5%E8%B7%AF%E5%AF%B9%E6%AF%94%E7%A4%BA%E6%84%8F%E5%9B%BE-1_hu_f044313788c5516d.png 1600w, /p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/%E6%AD%A3%E5%90%91%E5%AF%BC%E9%80%9A%E4%B8%8E%E5%8F%8D%E5%90%91%E6%88%AA%E6%AD%A2%E7%94%B5%E8%B7%AF%E5%AF%B9%E6%AF%94%E7%A4%BA%E6%84%8F%E5%9B%BE-1.png 1672w" width="1672"></p>
+<ul>
+<li>正接：D1有压差，承担整个电路的电流</li>
+<li>反接：D1会承受一个“反向电压”，相当于电阻无限大，承担电源电压</li>
+<li>适用于：小电流、允许压降的防反接</li>
+<li>不适用于：大电流、低电压、高效率、低功耗系统</li>
+</ul>
+<h2 id="整流桥-防反接电路分析">整流桥 防反接电路分析
+</h2><p><img alt="整流桥防反接正向导通与反向截止电路对比示意图" class="gallery-image" data-flex-basis="703px" data-flex-grow="293" height="339" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image.png" srcset="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image_hu_cb6707b587e8b5bf.png 800w, /p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image.png 994w" width="994"></p>
+<ul>
+<li>不管电路正常接入还是反向接入，都可以正常工作</li>
+<li>全桥整流需要承受两个二极管的压降（正接D3+D5，反接D10+D8）</li>
+<li>需要考虑负载电流的大小选择合适的二极管</li>
+</ul>
+<p>查手册</p>
+$$
+I_{D1} = I_{D2} = I_{LOAD}
+$$<p>
+</p>
+$$
+\text{假设}I_{LOAD}=500mA\text{时，}V_{F}=0.7v
+$$<p>
+$
+\text{此时}I_{D1}\text{为二极管需要考虑的负载电流，两个二极管的压降为}2\times V_{F}
+$
+\(I_{LOAD}\) 为负载电流</p>
+<p>正导通电流路径：
+</p>
+$$
+\boxed{BT3(+) \rightarrow D3 \rightarrow VCC \rightarrow \text{负载} \rightarrow GND \rightarrow D5 \rightarrow BT3(-)}
+$$<p>反接电流路径：
+</p>
+$$
+\boxed{BT4(+) \rightarrow D10 \rightarrow VCC \rightarrow \text{负载} \rightarrow GND \rightarrow D8 \rightarrow BT4(-)}
+$$<h2 id="保险丝二极管-防反接">保险丝+二极管 防反接
+</h2><p><img alt="保险丝+二极管防反接正向导通与反向截止电路对比示意图" class="gallery-image" data-flex-basis="903px" data-flex-grow="376" height="190" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image-1.png" width="715"></p>
+<ul>
+<li>电源正接时，整个负载电流全部经过保险丝，需要考虑后级负载电流大小</li>
+<li>电源反接时，电流经过二极管流会保险丝，此时保险丝自身+二极管的电阻很小，电流会迅速增加熔断保险丝</li>
+<li>二极管的持续电流要 <strong>大于</strong> 保险丝的跳闸电流，保护二极管</li>
+</ul>
+<p>正接电流路径：
+</p>
+$$
+\boxed{BT5(+) \rightarrow F1 \rightarrow R5 \rightarrow GND \rightarrow BT5(-)}
+$$<p>反接电流路径：
+</p>
+$$
+\boxed{BAT+ \rightarrow D \rightarrow PTC \rightarrow BAT-}
+$$<p>计算电流：</p>
+<p>1、正接：
+</p>
+$$
+I_{LOAD} \approx \frac{V_{BAT}}{R_5}
+$$<p>
+</p>
+$$
+\text{假设：}R_5=10\text{kΩ}\text{，}V_{BAT}=3.7v
+$$<p>
+</p>
+$$
+I_{LOAD}\approx 0.37mA
+$$<p>
+</p>
+$$
+I_{LOAD}\,\text{这个是非常小的电流，F1完全不会动作}
+$$<p>
+2、反接：
+</p>
+$$
+I_{FAULT} \approx \frac{V_{BAT}-V_F}{R_{BAT}+R_{PTC}+R_D+R_{wire}}
+$$<p>
+</p>
+$$
+\text{假设：}\quad V_{BAT}=3.7\text{V},\quad V_F=0.4\text{V},\quad R_{BAT}+R_{PTC}+R_D+R_{wire}=1\,\Omega
+$$<p>
+</p>
+$$
+I_{FAULT}\approx 3.3A \rightarrow \text{瞬间电流就可能非常大} \rightarrow \text{PTC开始发热}
+$$<h2 id="pmos-防反接电路分析这里关乎mos管选型">Pmos 防反接电路分析（这里关乎mos管选型）
+</h2><p><img alt="Pmos 防反接正向导通与反向截止电路对比示意图" class="gallery-image" data-flex-basis="831px" data-flex-grow="346" height="295" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image-3.png" srcset="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image-3_hu_a1967a21747b518c.png 800w, /p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image-3.png 1022w" width="1022"></p>
+<p><img alt="mos参数示意图" class="gallery-image" data-flex-basis="424px" data-flex-grow="176" height="510" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image-4.png" srcset="/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image-4_hu_cbd9682cd3f10f80.png 800w, /p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/image-4.png 902w" width="902"></p>
+<ul>
+<li>AO3401的漏极D接输入端，源极S接负载端，栅极G通过10kΩ电阻接GND</li>
+<li>正常供电时导通电阻较小，压降和功耗较低</li>
+</ul>
+<p>正接：
+上电时电流路径：（判断Pmos是否导通）
+</p>
+$$
+\boxed{BT7(+) \rightarrow Q1\text{体二极管} \rightarrow R8 \rightarrow GND \rightarrow BT7(-)}
+$$<p>
+计算上电时电流：
+</p>
+$$
+\text{假设}V_D\approx 0.6v,\text{已知栅极接地，}V_G=0v
+$$<p>
+</p>
+$$
+V_S\approx 3.7v-0.6v=3.1v
+$$<p>
+</p>
+$$
+V_{GS}=V_G-V_S
+$$<p>
+</p>
+$$
+V_{GS}\approx -3.1v
+$$<p>
+</p>
+$$
+AO3401\text{是}P\text{沟道}MOSFET\text{，负的}V_{GS}\text{会使}MOSFET\text{开启}
+$$<p>稳定时时电流路径：（Pmos导通）
+</p>
+$$
+\boxed{BT7(+) \rightarrow Q1(D \rightarrow S) \rightarrow R8 \rightarrow GND \rightarrow BT7(-)}
+$$<p>
+此时Q1的体二极管基本不再承担负载电流
+由于正常供电时导通电阻较小，压降可以忽略</p>
+<p>反接无电流路径：
+</p>
+$$
+\boxed{BT8(+) \rightarrow GND \rightarrow R10 \times\;Q2(S \rightarrow D) \rightarrow BT8(-)}
+$$<p>
+电源反接时几乎没有电流流过二极管 \(\rightarrow V_S=0v,栅极有绝缘层无电流\rightarrow V_G=0v \rightarrow V_{GS}=0v \rightarrow Pmos不导通\)</p>
+<h2 id="nmos-防反接电路分析">Nmos 防反接电路分析
+</h2><p>以 AO3400A（N 沟道 MOSFET）为例，电源电压为 3.7V，负载电阻为 10kΩ。</p>
+<ul>
+<li>NMOS 的源极 S 接负载负极，漏极 D 接电池负极，栅极 G 通过 10kΩ 电阻接电池正极。</li>
+<li>NMOS 采用低端防反接方式，与 PMOS 高端防反接方式不同。</li>
+<li>正常供电时导通电阻较小，压降和功耗较低。</li>
+<li>电源反接时，NMOS 截止，体二极管反向偏置，阻断负载电流。</li>
+<li>注意：负载地与电池负极之间必须经过 NMOS，不能直接短接。</li>
+</ul>
+<p>上电时电流路径（判断 NMOS 是否导通）
+</p>
+$$
+\boxed{BT7(+)\rightarrow R8\rightarrow Q1\text{体二极管}(S\rightarrow D)\rightarrow BT7(-)}
+$$<p>
+上电瞬间，NMOS 尚未形成导电沟道，电流可以先通过体二极管</p>
+<p>计算上电时电流：</p>
+<p>假设体二极管正向压降为：
+</p>
+$$
+V_F\approx0.6V
+$$<p>以电池负极为 0V 参考点：
+</p>
+$$
+V_D=0V
+$$<p>
+</p>
+$$
+V_S\approx0.6V
+$$<p>
+已知栅极通过 10kΩ 电阻连接电池正极，MOSFET 栅极稳态电流近似为零：
+</p>
+$$
+V_G\approx3.7V
+$$<p>
+计算栅源电压：
+</p>
+$$
+V_{GS}=V_G-V_S
+$$<p>
+</p>
+$$
+V_{GS}\approx3.7-0.6=3.1V
+$$<p>
+</p>
+$$
+\boxed{V_{GS}\approx3.1V}
+$$<p>
+AO3400A 是 N 沟道 MOSFET，正的 \(V_{GS}\) 达到足够幅值时会使 MOSFET 开启。
+</p>
+$$
+\boxed{V_{GS}>V_{GS(th)}\Rightarrow NMOS\text{开始导通}}
+$$<p>稳定时电流路径（NMOS 导通）：
+</p>
+$$
+\boxed{BT7(+)\rightarrow R8\rightarrow Q1(S\rightarrow D)\rightarrow BT7(-)}
+$$<p>
+此时 Q1 的体二极管基本不再承担负载电流</p>
+<p>由于 NMOS 导通电阻较小，源极与漏极之间的电压差很小：
+</p>
+$$
+V_S\approx V_D\approx0V
+$$<p>
+</p>
+$$
+V_{GS}=V_G-V_S
+$$<p>
+</p>
+$$
+\boxed{V_{GS}\approx3.7V}
+$$<p>
+假设负载电阻为：
+</p>
+$$
+R8=10k\Omega
+$$<p>
+忽略 MOSFET 导通压降，负载电流为：
+</p>
+$$
+I=\frac{U}{R}
+$$<p>
+</p>
+$$
+I=\frac{3.7}{10000}=0.00037A
+$$<p>
+</p>
+$$
+\boxed{I\approx0.37mA}
+$$<p>
+MOSFET 导通压降的大小为：
+</p>
+$$
+|V_{DS}|=I\times R_{DS(on)}
+$$<p>
+MOSFET 导通损耗为：
+</p>
+$$
+P=I^2R_{DS(on)}
+$$<p>
+由于正常供电时导通电阻较小，因此压降和功耗都较低。</p>
+<p>反接：</p>
+<p>反接时电流路径：
+</p>
+$$
+\boxed{BT8(+)\rightarrow Q2(D\rightarrow S)\;\times\; R10\rightarrow BT8(-)}
+$$<p>
+电源反接后，NMOS 的体二极管处于反向偏置状态，无法形成正常负载电流回路</p>
+<p>\(\times\) 表示电流路径被阻断</p>
+<p>判断 NMOS 是否导通：</p>
+<p>以反接后的电池正极为 0V 参考点：
+</p>
+$$
+V_D=0V
+$$<p>
+反接时体二极管截止，负载电流近似为零</p>
+<p>由于负载电阻 R10 两端没有明显压降，因此源极电位近似等于反接后的电池负极电位：
+</p>
+$$
+V_S\approx-3.7V
+$$<p>
+栅极通过 10kΩ 电阻连接原电池正极节点，该节点在反接后对应电池负极</p>
+<p>由于 MOSFET 栅极绝缘，稳态栅极电流近似为零：
+</p>
+$$
+V_G\approx-3.7V
+$$<p>
+计算栅源电压：
+</p>
+$$
+V_{GS}=V_G-V_S
+$$<p>
+</p>
+$$
+V_{GS}\approx-3.7-(-3.7)
+$$<p>
+</p>
+$$
+\boxed{V_{GS}\approx0V}
+$$<p>
+NMOS 需要足够的正向栅源电压才能导通</p>
+<p>此时，MOSFET 处于截止状态；同时，NMOS 的体二极管反向偏置，因此无法形成完整的负载电流回路
+</p>
+$$
+\boxed{I_{\text{load}}\approx0}
+$$<p>
+反接时：
+电源极性反转 → 体二极管反向偏置 → 负载电流近似为零 → 源极电位接近栅极电位 → \(V_{GS}\approx0V\) → NMOS 截止</p>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+
+    
+    <section class="article-copyright inline-meta">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0</a></span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+
+        <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 硬件学习ing
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.3">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.52cc14b84090e88a1da50e1d73ab4188aac30ef06cdb40b63f3235c53af8a019.js" defer></script>
+
+
+    </body>
+</html>
