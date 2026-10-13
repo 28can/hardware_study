@@ -1,6 +1,6 @@
 baseURL                = "https://teck-shrimp.top/"
 locale                 = "zh"
-title                  = "My Blog"
+title                  = "小能同学与底层协议"
 # Theme i18n support
 # See i18n folder for available languages
 defaultContentLanguage = "zh"
