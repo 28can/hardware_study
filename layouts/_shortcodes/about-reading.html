@@ -1,0 +1,15 @@
+{{/* Resolve real pages so titles and URLs follow Hugo's current content. */}}
+{{ $pages := slice }}
+{{ range slice "/posts/电源切换电路" "/posts/电源防反接" "/posts/myFirstBlog" }}
+    {{ with $.Page.Site.GetPage . }}
+        {{ if and (not .Draft) (not .PublishDate.IsZero) (le .PublishDate now) }}
+            {{ $pages = $pages | append . }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ with $pages }}
+    <h2 id="从这里开始阅读">从这里开始阅读</h2>
+    <ul class="about-reading">
+        {{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+    </ul>
+{{ end }}
