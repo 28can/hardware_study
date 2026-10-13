@@ -39,8 +39,8 @@
                     <a
                         href='{{ .URL }}'
                         {{ if .Params.newTab }}target="_blank"{{ end }}
-                        {{ with .Name }}title="{{ . }}"{{ end }}
-                        rel="me"
+                        {{ with .Name }}title="{{ . }}" aria-label="{{ . }}"{{ end }}
+                        rel="me{{ if .Params.newTab }} noopener noreferrer{{ end }}"
                     >
                         {{ $icon := default "link" .Params.Icon }}
                         {{ with $icon }}

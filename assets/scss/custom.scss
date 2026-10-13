@@ -23,6 +23,25 @@
     }
 }
 
+/* Keep the theme's 24px icons inside comfortable touch targets. */
+.menu-social {
+    flex-wrap: wrap;
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        color: var(--body-text-color);
+        &:hover, &:focus-visible {
+            color: var(--accent-color);
+            background: var(--note-tint);
+        }
+    }
+    svg { stroke: currentColor; }
+}
+
 /* About page only; keep homepage and ordinary article styles intact. */
 .about-page {
     --card-border-radius: 12px;
@@ -93,6 +112,24 @@
     }
 
     .article-footer { padding-top: 16px; border-top: 1px solid var(--note-border); }
+
+    .article-content .bilibili-contact {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px;
+        border: 1px solid var(--note-border);
+        border-radius: 10px;
+        background: var(--note-tint);
+        color: var(--accent-color);
+        box-shadow: none;
+        &:hover { border-color: var(--accent-color); color: var(--accent-color-darker); }
+        > svg { width: 24px; height: 24px; flex-shrink: 0; margin-top: 3px; stroke-width: 1.33; }
+        .bilibili-contact-details { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+        strong { font-size: 1.6rem; }
+        .bilibili-contact-details > span { color: var(--card-text-color-secondary); font-size: 1.4rem; }
+        .bilibili-contact-url { overflow-wrap: anywhere; }
+    }
 
     @media (min-width: 768px) {
         .main-container.extended { --left-sidebar-max-width: 200px; }

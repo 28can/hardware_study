@@ -1,15 +1,21 @@
 [[social]]
+    identifier = "bilibili"
+    name       = "Bilibili"
+    url        = "https://space.bilibili.com/3747570981539541"
+    weight     = 1
+
+    [social.params]
+        icon = "brand-bilibili"
+        newTab = true
+        nickname = "小能同学与底层协议"
+        description = "从电路原理出发，探索技术底层逻辑。"
+
+[[social]]
     identifier = "github"
     name       = "GitHub"
     url        = "https://github.com/CaiJimmy/hugo-theme-stack"
+    weight     = 2
 
     [social.params]
         icon = "brand-github"
-
-[[social]]
-    identifier = "twitter"
-    name       = "Twitter"
-    url        = "https://twitter.com"
-
-    [social.params]
-        icon = "brand-twitter"
+        newTab = true
