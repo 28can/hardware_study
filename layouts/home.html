@@ -1,0 +1,16 @@
+{{ define "body-class" }}notes-home{{ end }}
+
+{{ define "main" }}
+    {{ $paginator := partial "helper/paginator.html" . }}
+    <section class="article-list notes-list">
+        {{ range $paginator.Pages }}
+            {{ partial "article-list/note.html" . }}
+        {{ end }}
+    </section>
+    {{ partial "pagination.html" . }}
+    {{ partial "footer/footer" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

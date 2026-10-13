@@ -2,6 +2,9 @@
 date = '2026-07-11T14:37:37+08:00'
 draft = false
 title = '本地上传github操作'
+summary = '记录博客上传 GitHub、本地预览，以及文章图片、公式和代码块的使用方法。'
+categories = ['博客维护']
+tags = ['GitHub', 'Hugo']
 +++
 
 ## 上传GitHub指令

@@ -9,6 +9,7 @@ favicon        = "img/xingxing.png"
     #emoji    = "✏️"
     subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     avatar   = "img/YiRenZhiXia.png"
+    learningNote = "记录电源电路、硬件设计与学习实践"
 
 [article]
     [article.license]
@@ -18,9 +19,9 @@ favicon        = "img/xingxing.png"
 [widgets]
     homepage = [
         { type = "search" },
-        { type = "archives", params = { limit = 5 } },
         { type = "categories", params = { limit = 10 } },
         { type = "tag-cloud", params = { limit = 10 } },
+        { type = "archives", params = { limit = 5 } },
     ]
     page     = [{ type = "toc" }]
 

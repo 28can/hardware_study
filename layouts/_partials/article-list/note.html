@@ -1,0 +1,33 @@
+{{ $image := partial "helper/image" (dict "Image" (.Params.thumbnail | default .Params.image) "Resources" .Resources "Context" .) }}
+{{/* .Summary respects front matter, the summary divider and Hugo's automatic fallback. */}}
+{{ $summary := .Description | default .Summary | plainify | htmlUnescape }}
+<article class="note-card">
+    <div class="note-details">
+        <h2 class="note-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ with $summary }}<p class="note-summary">{{ . }}</p>{{ end }}
+        {{ $categories := .GetTerms "categories" }}
+        {{ $tags := .GetTerms "tags" }}
+        {{ if or $categories $tags }}
+            <div class="note-terms">
+                {{ range $categories }}<a class="note-category" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+                {{ range $tags }}<a class="note-tag" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
+            </div>
+        {{ end }}
+        <footer class="note-meta">
+            {{ if not .Date.IsZero }}
+                <span>{{ partial "helper/icon" "date" }}<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</time></span>
+            {{ end }}
+            <span>{{ partial "helper/icon" "clock" }}{{ T "article.readingTime" .ReadingTime }}</span>
+        </footer>
+    </div>
+    {{ with $image }}
+        {{ $src := .Permalink }}
+        {{/* Fit scales the whole diagram; Fill would crop it. */}}
+        {{ if and .Resource (reflect.IsImageResourceProcessable .Resource) }}
+            {{ $src = (.Resource.Fit "440x360").RelPermalink }}
+        {{ end }}
+        <a class="note-thumbnail" href="{{ $.RelPermalink }}" aria-label="{{ $.Title }}">
+            <img src="{{ $src }}" alt="{{ $.Title }}" loading="lazy" decoding="async"{{ with .Width }} width="{{ . }}"{{ end }}{{ with .Height }} height="{{ . }}"{{ end }}>
+        </a>
+    {{ end }}
+</article>
