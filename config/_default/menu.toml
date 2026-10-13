@@ -2,20 +2,22 @@
     identifier = "bilibili"
     name       = "Bilibili"
     url        = "https://space.bilibili.com/3747570981539541"
-    weight     = 1
+    weight     = 2
 
     [social.params]
         icon = "brand-bilibili"
         newTab = true
         nickname = "小能同学与底层协议"
-        description = "从电路原理出发，探索技术底层逻辑。"
+        description = "硬件学习记录、技术分享与交流。"
 
 [[social]]
     identifier = "github"
     name       = "GitHub"
-    url        = "https://github.com/CaiJimmy/hugo-theme-stack"
-    weight     = 2
+    url        = "https://github.com/28can"
+    weight     = 1
 
     [social.params]
         icon = "brand-github"
         newTab = true
+        nickname = "28can"
+        description = "代码仓库、学习实践与开源项目。"

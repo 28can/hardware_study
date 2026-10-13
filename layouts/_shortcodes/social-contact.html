@@ -1,0 +1,16 @@
+{{/* The ordered social menu is the single source for both platform entry points. */}}
+{{ $contacts := where .Page.Site.Menus.social "Identifier" "in" (slice "github" "bilibili") }}
+{{ with $contacts }}
+    <div class="about-social-links">
+        {{ range . }}
+            <a class="social-contact" href="{{ .URL }}" target="_blank" rel="noopener noreferrer" aria-label="访问 {{ .Name }} 主页：{{ .Params.nickname }}">
+                <span class="social-contact-icon" aria-hidden="true">{{ partial "helper/icon" .Params.icon }}</span>
+                <span class="social-contact-details">
+                    <strong>{{ .Name }}：{{ .Params.nickname }}</strong>
+                    <span>{{ .Params.description }}</span>
+                    <span class="social-contact-action">访问 {{ .Name }} 主页</span>
+                </span>
+            </a>
+        {{ end }}
+    </div>
+{{ end }}

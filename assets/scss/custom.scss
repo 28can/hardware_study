@@ -39,6 +39,7 @@
             background: var(--note-tint);
         }
     }
+    a > span { display: inline-flex; }
     svg { stroke: currentColor; }
 }
 
@@ -113,7 +114,13 @@
 
     .article-footer { padding-top: 16px; border-top: 1px solid var(--note-border); }
 
-    .article-content .bilibili-contact {
+    .about-social-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .article-content .social-contact {
         display: flex;
         align-items: flex-start;
         gap: 14px;
@@ -123,12 +130,17 @@
         background: var(--note-tint);
         color: var(--accent-color);
         box-shadow: none;
-        &:hover { border-color: var(--accent-color); color: var(--accent-color-darker); }
-        > svg { width: 24px; height: 24px; flex-shrink: 0; margin-top: 3px; stroke-width: 1.33; }
-        .bilibili-contact-details { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+        &:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color-darker);
+            .social-contact-action { text-decoration: underline; }
+        }
+        .social-contact-icon { display: inline-flex; flex-shrink: 0; margin-top: 3px; }
+        svg { width: 24px; height: 24px; stroke-width: 1.33; }
+        .social-contact-details { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
         strong { font-size: 1.6rem; }
-        .bilibili-contact-details > span { color: var(--card-text-color-secondary); font-size: 1.4rem; }
-        .bilibili-contact-url { overflow-wrap: anywhere; }
+        .social-contact-details > span { color: var(--card-text-color-secondary); font-size: 1.4rem; }
+        .social-contact-details > .social-contact-action { color: var(--accent-color); }
     }
 
     @media (min-width: 768px) {
@@ -139,6 +151,7 @@
     @media (max-width: 599px) {
         --card-padding: 20px;
         .article-content .about-directions { grid-template-columns: minmax(0, 1fr); }
+        .about-social-links { grid-template-columns: minmax(0, 1fr); }
         .article-header .article-title { font-size: 2.5rem; }
     }
 }

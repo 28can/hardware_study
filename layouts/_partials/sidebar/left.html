@@ -44,7 +44,7 @@
                     >
                         {{ $icon := default "link" .Params.Icon }}
                         {{ with $icon }}
-                            {{ partial "helper/icon" . }}
+                            <span aria-hidden="true">{{ partial "helper/icon" . }}</span>
                         {{ end }}
                     </a>
                 </li>
