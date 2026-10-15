@@ -1,7 +1,7 @@
 +++
 date = '2026-10-14T14:37:37+08:00'
 draft = false
-title = '时间戳'
+title = 'STM32F103VET6'
 summary = '记录STM32F103VET6开发板项目以及迭代功能'
 categories = ['STM32F103VET6开发板设计']
 tags = ['GitHub', 'Hugo']

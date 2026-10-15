@@ -3,9 +3,10 @@ date = '2026-10-15T14:37:37+08:00'
 draft = false
 title = '嘉立创PCB布局'
 summary = '记录PCB布局个人常用的操作'
-categories = ['PCB']
+categories = ['PCB绘制']
 tags = ['GitHub', 'Hugo']
 +++
+
 # PCB
 
 ## 板框

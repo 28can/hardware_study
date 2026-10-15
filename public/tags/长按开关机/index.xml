@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>长按开关机 on 小能同学与底层协议</title>
+        <link>http://localhost:1313/tags/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA/</link>
+        <description>Recent content in 长按开关机 on 小能同学与底层协议</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh</language>
+        <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>长按开关机电路</title>
+            <link>http://localhost:1313/p/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA%E7%94%B5%E8%B7%AF/</link>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/p/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA%E7%94%B5%E8%B7%AF/</guid>
+            <description>&lt;h1 id=&#34;长按开关机电路分析&#34;&gt;长按开关机电路分析&#xD;&#xA;&lt;/h1&gt;&lt;p&gt;&lt;img alt=&#34;长按开关机电路分析&#34; class=&#34;gallery-image&#34; data-flex-basis=&#34;476px&#34; data-flex-grow=&#34;198&#34; height=&#34;527&#34; loading=&#34;lazy&#34; sizes=&#34;(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px&#34; src=&#34;http://localhost:1313/p/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA%E7%94%B5%E8%B7%AF/image.png&#34; srcset=&#34;http://localhost:1313/p/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA%E7%94%B5%E8%B7%AF/image_hu_ff426862871ab4ab.png 800w, http://localhost:1313/p/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA%E7%94%B5%E8%B7%AF/image.png 1046w&#34; width=&#34;1046&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;条件（前提）：需要带有使能引脚的LDO或DCDC电源芯片&lt;/li&gt;&#xA;&lt;li&gt;通过JUDGE_SWTIMER_PIN来检测按键按下的时长&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
+        </item></channel>
+</rss>
