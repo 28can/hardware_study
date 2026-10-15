@@ -13,6 +13,7 @@ tags = ['GitHub', 'Hugo']
 git add .  
 git commit -m "blog"  
 git push
+使用代理推送：git -c http.proxy=http://127.0.0.1:7897 push origin main
 ```
 
 ### 推送失败  
