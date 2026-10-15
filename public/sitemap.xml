@@ -2,26 +2,26 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 		<sitemap>
-			<loc>http://localhost:1313/en/sitemap.xml</loc>
+			<loc>https://teck-shrimp.top/en/sitemap.xml</loc>
 			
 		</sitemap>
 	
 		<sitemap>
-			<loc>http://localhost:1313/zh/sitemap.xml</loc>
+			<loc>https://teck-shrimp.top/zh/sitemap.xml</loc>
 			
-				<lastmod>2026-10-14T14:37:37+08:00</lastmod>
+				<lastmod>2026-10-15T00:00:00+08:00</lastmod>
 			
 		</sitemap>
 	
 		<sitemap>
-			<loc>http://localhost:1313/zh-hant-tw/sitemap.xml</loc>
+			<loc>https://teck-shrimp.top/zh-hant-tw/sitemap.xml</loc>
 			
 				<lastmod>2026-01-26T00:00:00+00:00</lastmod>
 			
 		</sitemap>
 	
 		<sitemap>
-			<loc>http://localhost:1313/ja/sitemap.xml</loc>
+			<loc>https://teck-shrimp.top/ja/sitemap.xml</loc>
 			
 				<lastmod>2026-01-26T00:00:00+00:00</lastmod>
 			

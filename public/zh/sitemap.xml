@@ -2,215 +2,221 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+    <loc>https://teck-shrimp.top/categories/</loc>
+    <lastmod>2026-10-15T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="https://teck-shrimp.top/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/categories/"
+                href="https://teck-shrimp.top/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant-tw"
-                href="http://localhost:1313/zh-hant-tw/categories/"
+                href="https://teck-shrimp.top/zh-hant-tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/"
+                href="https://teck-shrimp.top/ja/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/github/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+    <loc>https://teck-shrimp.top/tags/github/</loc>
+    <lastmod>2026-10-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+    <loc>https://teck-shrimp.top/tags/hugo/</loc>
+    <lastmod>2026-10-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+    <loc>https://teck-shrimp.top/categories/pcb%E7%BB%98%E5%88%B6/</loc>
+    <lastmod>2026-10-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/stm32f103vet6%E5%BC%80%E5%8F%91%E6%9D%BF%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+    <loc>https://teck-shrimp.top/posts/</loc>
+    <lastmod>2026-10-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+    <loc>https://teck-shrimp.top/tags/</loc>
+    <lastmod>2026-10-15T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="https://teck-shrimp.top/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/tags/"
+                href="https://teck-shrimp.top/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant-tw"
-                href="http://localhost:1313/zh-hant-tw/tags/"
+                href="https://teck-shrimp.top/zh-hant-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/tags/"
+                href="https://teck-shrimp.top/ja/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+    <loc>https://teck-shrimp.top/p/%E5%98%89%E7%AB%8B%E5%88%9Bpcb%E5%B8%83%E5%B1%80/</loc>
+    <lastmod>2026-10-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/%E6%97%B6%E9%97%B4%E6%88%B3/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/%E6%97%B6%E9%97%B4%E6%88%B3/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+    <loc>https://teck-shrimp.top/</loc>
+    <lastmod>2026-10-15T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="https://teck-shrimp.top/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/"
+                href="https://teck-shrimp.top/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant-tw"
-                href="http://localhost:1313/zh-hant-tw/"
+                href="https://teck-shrimp.top/zh-hant-tw/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/"
+                href="https://teck-shrimp.top/ja/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/%E7%94%B5%E6%BA%90%E7%94%B5%E8%B7%AF/</loc>
+    <loc>https://teck-shrimp.top/p/stm32f103vet6/</loc>
+    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+  </url><url>
+    <loc>https://teck-shrimp.top/categories/stm32f103vet6%E5%BC%80%E5%8F%91%E6%9D%BF%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+  </url><url>
+    <loc>https://teck-shrimp.top/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+  </url><url>
+    <loc>https://teck-shrimp.top/p/%E6%97%B6%E9%97%B4%E6%88%B3/</loc>
+    <lastmod>2026-10-14T14:37:37+08:00</lastmod>
+  </url><url>
+    <loc>https://teck-shrimp.top/categories/%E7%94%B5%E6%BA%90%E7%94%B5%E8%B7%AF/</loc>
     <lastmod>2026-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA/</loc>
+    <loc>https://teck-shrimp.top/tags/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA/</loc>
     <lastmod>2026-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA%E7%94%B5%E8%B7%AF/</loc>
+    <loc>https://teck-shrimp.top/p/%E9%95%BF%E6%8C%89%E5%BC%80%E5%85%B3%E6%9C%BA%E7%94%B5%E8%B7%AF/</loc>
     <lastmod>2026-10-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mosfet/</loc>
+    <loc>https://teck-shrimp.top/tags/mosfet/</loc>
     <lastmod>2026-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E7%94%B5%E6%BA%90%E5%88%87%E6%8D%A2/</loc>
+    <loc>https://teck-shrimp.top/tags/%E7%94%B5%E6%BA%90%E5%88%87%E6%8D%A2/</loc>
     <lastmod>2026-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/%E7%94%B5%E6%BA%90%E5%88%87%E6%8D%A2%E7%94%B5%E8%B7%AF/</loc>
+    <loc>https://teck-shrimp.top/p/%E7%94%B5%E6%BA%90%E5%88%87%E6%8D%A2%E7%94%B5%E8%B7%AF/</loc>
     <lastmod>2026-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/</loc>
+    <loc>https://teck-shrimp.top/p/%E7%94%B5%E6%BA%90%E9%98%B2%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/</loc>
     <lastmod>2026-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
+    <loc>https://teck-shrimp.top/tags/%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
     <lastmod>2026-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E9%98%B2%E5%8F%8D%E6%8E%A5/</loc>
+    <loc>https://teck-shrimp.top/tags/%E9%98%B2%E5%8F%8D%E6%8E%A5/</loc>
     <lastmod>2026-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/</loc>
+    <loc>https://teck-shrimp.top/p/%E6%9C%AC%E5%9C%B0%E4%B8%8A%E4%BC%A0github%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2026-07-11T14:37:37+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2%E7%BB%B4%E6%8A%A4/</loc>
+    <loc>https://teck-shrimp.top/categories/%E5%8D%9A%E5%AE%A2%E7%BB%B4%E6%8A%A4/</loc>
     <lastmod>2026-07-11T14:37:37+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/</loc>
+    <loc>https://teck-shrimp.top/page/</loc>
     <lastmod>2026-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/page/"
+                href="https://teck-shrimp.top/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant-tw"
-                href="http://localhost:1313/zh-hant-tw/page/"
+                href="https://teck-shrimp.top/zh-hant-tw/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/page/"
+                href="https://teck-shrimp.top/ja/page/"
                 />
   </url><url>
-    <loc>http://localhost:1313/%E5%85%B3%E4%BA%8E/</loc>
+    <loc>https://teck-shrimp.top/%E5%85%B3%E4%BA%8E/</loc>
     <lastmod>2026-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/%E5%85%B3%E4%BA%8E/"
+                href="https://teck-shrimp.top/%E5%85%B3%E4%BA%8E/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant-tw"
-                href="http://localhost:1313/zh-hant-tw/%E9%97%9C%E6%96%BC/"
+                href="https://teck-shrimp.top/zh-hant-tw/%E9%97%9C%E6%96%BC/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/%E3%81%93%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"
+                href="https://teck-shrimp.top/ja/%E3%81%93%E3%81%AE%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"
                 />
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://teck-shrimp.top/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/archives/"
+                href="https://teck-shrimp.top/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant-tw"
-                href="http://localhost:1313/zh-hant-tw/archives/"
+                href="https://teck-shrimp.top/zh-hant-tw/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/archives/"
+                href="https://teck-shrimp.top/ja/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/%E9%93%BE%E6%8E%A5/</loc>
+    <loc>https://teck-shrimp.top/%E9%93%BE%E6%8E%A5/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/%E9%93%BE%E6%8E%A5/"
+                href="https://teck-shrimp.top/%E9%93%BE%E6%8E%A5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant-tw"
-                href="http://localhost:1313/zh-hant-tw/%E9%8F%88%E6%8E%A5/"
+                href="https://teck-shrimp.top/zh-hant-tw/%E9%8F%88%E6%8E%A5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/%E3%83%AA%E3%83%B3%E3%82%AF/"
+                href="https://teck-shrimp.top/ja/%E3%83%AA%E3%83%B3%E3%82%AF/"
                 />
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://teck-shrimp.top/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/search/"
+                href="https://teck-shrimp.top/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant-tw"
-                href="http://localhost:1313/zh-hant-tw/search/"
+                href="https://teck-shrimp.top/zh-hant-tw/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/search/"
+                href="https://teck-shrimp.top/ja/search/"
                 />
   </url>
 </urlset>

@@ -1,0 +1,12 @@
+{{- $result := slice -}}
+
+{{- if or .IsHome (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $pages := partial "helper/pages.html" . -}}
+    {{/* The page title also initializes pagination, so sort before its first call. */}}
+    {{- if .IsHome -}}
+        {{- $pages = $pages.ByPublishDate.Reverse -}}
+    {{- end -}}
+    {{- $result = .Paginate $pages -}}
+{{- end -}}
+
+{{- return $result -}}
