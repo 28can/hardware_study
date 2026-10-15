@@ -2,8 +2,8 @@
 date = '2026-10-14T14:37:37+08:00'
 draft = false
 title = '时间戳'
-summary = '记录研途时间戳。'
-categories = ['研究 “生”']
+summary = '记录研途时间戳'
+categories = ['个人记录']
 tags = ['GitHub', 'Hugo']
 +++
 
