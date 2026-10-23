@@ -1,5 +1,5 @@
 +++
-date = '2026-10-23'
+date = '2026-10-22'
 draft = false
 title = 'USB 电路分析'
 math = true
