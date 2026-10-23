@@ -6,12 +6,12 @@ math = true
 summary = '整理USB扩展电路，主要是USB 2.0'
 categories = ['USB电路']
 tags = ['MOSFET']
-thumbnail = 'USB 电路分析'
+thumbnail = 'image.png'
 +++
 # 典型电路
 > D+,D-走线需要走类差分，从引脚出来后，靠近着走，这样就算有电磁干扰，也不会影响电压差。
 
-![alt text](image.png)
+![典型电路](image.png)
 数据手册
 
 ![alt text](image-4.png)

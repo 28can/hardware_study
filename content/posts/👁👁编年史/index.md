@@ -5,6 +5,7 @@ title = '时间戳'
 summary = '记录研途时间戳'
 categories = ['个人记录']
 tags = ['GitHub', 'Hugo']
+thumbnail = 'image.png'
 +++
 
 # 2026

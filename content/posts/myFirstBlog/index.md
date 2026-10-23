@@ -5,7 +5,10 @@ title = '本地上传github操作'
 summary = '记录博客上传 GitHub、本地预览，以及文章图片、公式和代码块的使用方法。'
 categories = ['博客维护']
 tags = ['GitHub', 'Hugo']
+thumbnail = '920155234b5de694e7fbe17816275af-1-1.jpg'
 +++
+
+![alt text](920155234b5de694e7fbe17816275af-1-1.jpg)
 
 ## 上传GitHub指令
 

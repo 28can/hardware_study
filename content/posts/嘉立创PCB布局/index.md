@@ -5,6 +5,7 @@ title = '嘉立创PCB布局'
 summary = '记录PCB布局个人常用的操作'
 categories = ['PCB绘制']
 tags = ['GitHub', 'Hugo']
+thumbnail = 'image.png'
 +++
 
 # PCB

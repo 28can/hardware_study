@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>PCB绘制 on 小能同学与底层协议</title>
-        <link>https://teck-shrimp.top/categories/pcb%E7%BB%98%E5%88%B6/</link>
+        <link>http://localhost:1313/categories/pcb%E7%BB%98%E5%88%B6/</link>
         <description>Recent content in PCB绘制 on 小能同学与底层协议</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh</language>
-        <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://teck-shrimp.top/categories/pcb%E7%BB%98%E5%88%B6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/pcb%E7%BB%98%E5%88%B6/index.xml" rel="self" type="application/rss+xml" /><item>
             <title>嘉立创PCB布局</title>
-            <link>https://teck-shrimp.top/p/%E5%98%89%E7%AB%8B%E5%88%9Bpcb%E5%B8%83%E5%B1%80/</link>
+            <link>http://localhost:1313/p/%E5%98%89%E7%AB%8B%E5%88%9Bpcb%E5%B8%83%E5%B1%80/</link>
             <pubDate>Thu, 15 Oct 2026 00:00:00 +0800</pubDate>
-            <guid>https://teck-shrimp.top/p/%E5%98%89%E7%AB%8B%E5%88%9Bpcb%E5%B8%83%E5%B1%80/</guid>
-            <description>&lt;h1 id=&#34;pcb&#34;&gt;PCB&#xD;&#xA;&lt;/h1&gt;&lt;h2 id=&#34;板框&#34;&gt;板框&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;嘉立创免费打板：≤100×100mm&lt;br&gt;&#xA;圆角，倒角半径：3mm&lt;br&gt;&#xA;定位孔，内径3mm，外径4mm&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;&lt;h2 id=&#34;包地处理&#34;&gt;包地处理&#xD;&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;晶振需要包地&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;设置禁止区，晶振周围禁止布线（多层）和其他元器件，用过孔包围住禁止区&lt;br&gt;&#xA;主要是防止晶振干扰其他布线和器件，同时也避免其他元件对晶振产生影响&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;</description>
+            <guid>http://localhost:1313/p/%E5%98%89%E7%AB%8B%E5%88%9Bpcb%E5%B8%83%E5%B1%80/</guid>
+            <description>&lt;h1 id=&#34;pcb&#34;&gt;PCB&#xD;&#xA;&lt;/h1&gt;&lt;h2 id=&#34;板框&#34;&gt;板框&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;嘉立创免费打板：≤100×100mm&lt;br&gt;&#xA;圆角，倒角半径：3mm&lt;br&gt;&#xA;定位孔，内径3mm，外径4mm&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;&lt;h2 id=&#34;包地处理&#34;&gt;包地处理&#xD;&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;晶振需要包地&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;设置禁止区，晶振周围禁止布线（多层）和其他元器件，用过孔包围住禁止区&lt;br&gt;&#xA;主要是防止晶振干扰其他布线和器件，同时也避免其他元件对晶振产生影响&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;&lt;h2 id=&#34;线宽&#34;&gt;线宽&#xD;&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;时钟线&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;10 mil&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;电源线&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;20-30 mil&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;&lt;h2 id=&#34;快捷键&#34;&gt;快捷键&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;换线宽：shift w&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;&lt;h2 id=&#34;gnd引脚&#34;&gt;GND引脚&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;尽量不要过窄，不然铺铜过不去&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;</description>
         </item></channel>
 </rss>
