@@ -3,7 +3,7 @@ date = '2026-10-14T14:37:37+08:00'
 draft = false
 title = 'STM32F103VET6'
 summary = '记录STM32F103VET6开发板项目以及迭代功能'
-categories = ['STM32F103VET6开发板设计']
+categories = ['PCB绘制']
 tags = ['GitHub', 'Hugo']
 thumbnail = '优化方案.png'
 +++
