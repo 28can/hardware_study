@@ -4,7 +4,7 @@ draft = false
 title = '电源切换电路'
 math = true
 summary = '记录外部 5V 供电接入与断开时的电源切换过程，以及 MOSFET 体二极管和沟道的电流路径。'
-categories = ['电源电路']
+categories = ['电路设计']
 tags = ['MOSFET', '电源切换']
 thumbnail = 'image.png'
 +++

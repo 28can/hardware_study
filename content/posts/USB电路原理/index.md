@@ -4,7 +4,7 @@ draft = false
 title = 'USB 电路分析'
 math = true
 summary = '整理USB扩展电路，主要是USB 2.0'
-categories = ['USB电路']
+categories = ['电路设计']
 tags = ['MOSFET']
 thumbnail = 'image.png'
 +++

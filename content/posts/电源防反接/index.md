@@ -4,7 +4,7 @@ draft = false
 title = '电源防反接电路分析'
 math = true
 summary = '整理二极管、整流桥、保险丝与 MOSFET 防反接电路，记录正接和反接时的工作过程及电流路径。'
-categories = ['电源电路']
+categories = ['电路设计']
 tags = ['MOSFET', '防反接', '二极管']
 thumbnail = '正向导通与反向截止电路对比示意图-1.png'
 +++

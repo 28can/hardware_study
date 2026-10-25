@@ -4,7 +4,7 @@ draft = false
 title = '长按开关机电路'
 math = true
 summary = '记录长按开关机电路的使用前提，以及通过 JUDGE_SWTIMER_PIN 检测按键按下时长的思路。'
-categories = ['电源电路']
+categories = ['电路设计']
 tags = ['长按开关机']
 thumbnail = 'image.png'
 +++
