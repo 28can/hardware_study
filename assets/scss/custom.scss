@@ -259,13 +259,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
     .pagination .current { color: var(--accent-color-text); background: var(--accent-color); }
 
-    @media (min-width: 768px) {
-        .main-container > .right-sidebar { width: 250px; flex-shrink: 0; }
+    /* The article list uses the archive width; widgets sit beside it when space allows. */
+    main.main { position: relative; }
+
+    main.main > .right-sidebar {
+        order: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        width: 100%;
+        max-width: none;
+        position: static;
+        padding: 0;
     }
 
-    /* Keep two comfortable columns on tablets; Stack's navigation stays intact. */
-    @media (min-width: 768px) and (max-width: 1199px) {
-        .main-container > .right-sidebar { display: none; }
+    @media (min-width: 2156px) {
+        main.main > .right-sidebar {
+            position: absolute;
+            top: var(--main-top-padding);
+            left: calc(100% + var(--spacing-3xl));
+            display: flex;
+            width: 250px;
+            flex-direction: column;
+        }
     }
 
     @media (max-width: 767px) {
